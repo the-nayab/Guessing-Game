@@ -3,7 +3,7 @@ number = random.randint(1, 10)
 
 player_name = input("Hello, What's your name?")
 
-print('Okay! '+ player_name+ ' Guess a number between 1 and 10. Remember You have only 5 tries.')
+print('Hey! '+ player_name+ ' Guess a number between 1 and 10. Remember You have only 5 tries.')
 try:
   def guessing():
     number_of_guesses = 0
@@ -14,13 +14,13 @@ try:
       number_of_guesses +=1
     
       if guess < number:
-        print('Your guess is too low')
+        print('Your guess is low')
       if guess > number:
-        print('Your guess is too high')
+        print('Your guess is high')
       if guess == number:
         break
     if guess == number:
-      print('You guessed the number in ' + str(number_of_guesses) + ' tries!')
+      print('Correct! You guessed the number in ' + str(number_of_guesses) + ' tries!')
     else:
       print('You did not guess the number, The number was ' + str(number))
     return
